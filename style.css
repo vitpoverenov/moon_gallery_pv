@@ -1,123 +1,35 @@
-body, html {
- height: 100%;
- margin: 0;
- font-size: 16px;
- font-family: "Lato", sans-serif;
- font-weight: 400;
- line-height: 1.8em;
- color: #666;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+body{
+  background-color: rgb(66, 67, 68);
 }
 
-/*Parallax Effect*/
-.img1, .img2, .img3, .img4 {
-  position: relative;
-  opacity: 0.70;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.img1 {
-  background-image: url('image1.jpg');
-  min-height: 400px;
-}
-
-.img2 {
-  background-image: url('image2.jpg');
-  min-height: 400px;
-}
-
-.img3 {
-  background-image: url('image3.jpg');
-  min-height: 400px;
-}
-
-.img4 {
-  background-image: url('image4.jpg');
-  min-height: 400px;
-}
-
-section {  
+.main-title {
+  color: aliceblue;
+  margin-top: 20px;
   text-align: center;
-  padding: 50px 80px;
+  font-size: 1.5em;
 }
 
-.section-light {
-  background-color: #f4f4f4;
-  color: #666;
-}
-
-.section-dark {
-  background-color: #201c1c;
-  color: #ddd;
-}
-
-.ptext {
-  position: absolute;
-  top: 50%;
+.container {
   width: 100%;
-  text-align: center;
-  color: black;
-  font-size: 27px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-.ptext .border {
-  background-color: #201c1c;
-  color: #fff;
-  padding: 20px;
-  border: white;
-  border-radius: 25px;
-}
-
-.ptext .border:hover {
-  background-color: #291c1c;
-  color: #5f5959;
-
-}
-
-.footer {
- background-color: #5f5959;
- color: white;
- height: 70px;
- padding: 10px;
- display: flex;
- justify-content: center;
-}
-
-.footer__text {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  color: rgb(253, 246, 246);
-  margin: 0 auto;
-
+  align-items: center;
+  justify-content: center;
+  padding: 30px 8%;
 }
 
-.footer__text--link {
-  font-size: 16px;
-  padding: 5px;
-  margin: 0 auto;
-  color: rgb(253, 246, 246);
-  text-decoration: none;
-  border: 2px solid #5f5959;
-  border-radius: 10px;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
 }
 
-.footer__text--link:hover {
-  background: black;
-  opacity: 0.8;
-  border: 2px solid  black;;
-  border-radius: 10px;
-  
-}
-
-
-@media screen and (max-width:600px) {
-  .ptext .border {
-    font-size: 12px;
-
-  }
-
+.gallery img {
+  width: 100%;
 }
